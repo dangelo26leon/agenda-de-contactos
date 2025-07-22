@@ -2,20 +2,24 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;;
 }
 
 .app-header {
-  background-color: #f0f0f0;
+  background-color: var(--header-background);
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadows 0.3s;
 }
 
 .app-header h1 {
   margin: 0;
-  color: #333;
+  color: var(--text-color);
 }
 
 .app-main {
@@ -27,11 +31,12 @@
 }
 
 .form-section {
-  background: white;
+  background: var(--card--background);
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
+  transition: background-color 0.3s, box-shadow 0.3s;;
 }
 
 .contact-form {
@@ -54,9 +59,12 @@
 
 .form-group input {
   padding: 0.5rem;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   border-radius: 4px;
   font-size: 1rem;
+  background-color: var(--card-background);
+  color: var(--text-color);
+  transition: border-color 0.3s, background-color 0.3s;;
 }
 
 .form-actions {
@@ -72,31 +80,31 @@
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s;
+  color: white;
 }
 
 .form-actions button[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
+  background-color: var(--button-primary-background);
 }
 
 .form-actions button[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: var(--button-primary-hover);
 }
 
 .form-actions button[type="button"] {
-  background-color: #f44336;
-  color: white;
+  background-color: var(--button-danger-background);
 }
 
 .form-actions button[type="button"]:hover {
-  background-color: #da190b;
+  background-color: var(--button-danger-hover);
 }
 
 .contacts-section {
-  background: white;
+  background: var(--card--background);
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;;
 }
 
 .search-bar {
@@ -106,9 +114,12 @@
 .search-input {
   width: 100%;
   padding: 0.5rem;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   border-radius: 4px;
   font-size: 1rem;
+  background-color: var(--card-background);
+  color: var(--text-color);
+  transition: border-color 0.3s, background-color 0.3s, color 0.3s;
 }
 
 .contact-list ul {
@@ -122,7 +133,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--list-border-color);
+  transition: border-color 0.3s;
 }
 
 .contact-item:last-child {
@@ -141,42 +153,42 @@
   font-size: 0.875rem;
   cursor: pointer;
   transition: background-color 0.3s;
+  color: white;
 }
 
 .contact-actions button:first-child {
-  background-color: #2196F3;
-  color: white;
+  background-color: var(--button-info-background);
 }
 
 .contact-actions button:first-child:hover {
-  background-color: #0b7dda;
+  background-color: var(--button-info-hover);
 }
 
 .contact-actions button:last-child {
-  background-color: #f44336;
-  color: white;
+  background-color: var(--button-danger-background);
 }
 
 .contact-actions button:last-child:hover {
-  background-color: #da190b;
+  background-color: var(--button-danger-hover);
 }
 
 .empty-message {
   text-align: center;
-  color: #999;
+  color: var(--empty-message-color);
   padding: 2rem;
+  transition: color 0.3s;
 }
 
 .theme-toggle {
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 4px;
-  background-color: #666;
+  background-color: var(--toggle-background);
   color: white;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .theme-toggle:hover {
-  background-color: #555;
+  background-color: var(--toggle-hover);
 }
